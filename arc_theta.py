@@ -1,3 +1,10 @@
+"""
+project: manimation
+april 16 2025 - XQ - LUMC
+visualization of theta angle: linear -> circle
+"""
+
+
 from manim import *
 from manim import DashedLine, always_redraw
 import math
