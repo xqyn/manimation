@@ -108,9 +108,10 @@ class ArcLinearMapping(Scene):
                 mapping_line, angle_text, arc_label
             )
         # Coordinate transformation label
-        coord_equations = MathTex(
-            r"x(\theta) = r \cos(\theta), \quad y(\theta) = r \sin(\theta)"
-        ).scale(0.6).to_corner(UR).shift(DOWN * 0.5)
+        coord_equations = VGroup(
+            MathTex(r"x(\theta) = r \cos(\theta)"),
+            MathTex(r"y(\theta) = r \sin(\theta)")
+        ).arrange(DOWN, buff=0.2).scale(0.6).next_to(circle, RIGHT, buff=0.5)
         self.add(coord_equations)
         
         # Animate all arcs together
@@ -121,7 +122,7 @@ class ArcLinearMapping(Scene):
         )
         
         # Wait briefly before playing backward
-        self.wait(1)
+        self.wait(0.2)
 
         # Animate all arcs backward
         self.play(
