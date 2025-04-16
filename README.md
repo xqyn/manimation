@@ -1,0 +1,1 @@
+![Arc mapping](./media/videos/arc_theta/480p15/ArcLinearMapping_ManimCE_v0.19.0.gif)
