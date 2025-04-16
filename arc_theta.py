@@ -119,3 +119,13 @@ class ArcLinearMapping(Scene):
             run_time=5,
             rate_func=linear
         )
+        
+        # Wait briefly before playing backward
+        self.wait(1)
+
+        # Animate all arcs backward
+        self.play(
+            *[t.animate.set_value(0) for t, _, _ in trackers],
+            run_time=5,
+            rate_func=linear
+        )
