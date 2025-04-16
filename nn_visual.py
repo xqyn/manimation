@@ -1,3 +1,9 @@
+"""
+project: manimation
+april 16 2025 - XQ - LUMC
+testing manim
+"""
+
 from manim import *
 
 class NeuralNetwork(Scene):
