@@ -11,3 +11,7 @@ ArcLinearMapping:
 # --- neuron
 NeuralNetwork:
 	manim -pql nn_visual.py NeuralNetwork --format gif
+
+# --- WaddingtonLandscape
+WaddingtonLandscape:
+	manim -pql wdd_modeling.py WaddingtonLandscape --format gif
